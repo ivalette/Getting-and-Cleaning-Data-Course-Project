@@ -1,21 +1,22 @@
 ##CookBook
-In this document, we will describe the variables, the datasets, transformations or work that was performed to clean up the data from the link provided in README.md with the R scrpt "run_analysis.R".
+In this document, we will describe the variables, the datasets, transformations or work that was performed to clean up the data from the link provided in README.md with the R script "run_analysis.R".
 
 ##General description
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 ##Dataset Description
-- feature is the datasets that contents all the variable names for the data contained in X_test and X_train. It is composed of 561 different variable names.
-- featureLt is the datasets produced by the R script "run_analysis" and that contents only the mean or standard deviation variables contained in X_test and X_train. It has 66 different variable names.
-- X_test is the test dataset and has 2947 rows and 561 variables (described in Variable Description)
-- X_train is the training dataset and has 7352 rows and 561 variables (described in Variable Description)
-- mergeData is composed of the combined datasets X_test and X_train merged together by the "run_analysis.R" script. It has 10299 rows and 561 vriables (described in Variable Description)
-- mean_std is composed of the combined datasets X_test and X_train. It has 10299 rows and only 66 variables (contains only the mean or standard deviation as described in Variable Reduction section). It is produced by the "run_analysis.R" script.
-- y_test is the test dataset for the activity codes. It contains only one column and 2947 rows. This column is renamed by the "run_analysis.R" script to "activity".
-- y_train is the training dataset for the activity labels. It contains only one column and 7352 rows. This column is renamed by the "run_analysis.R" script to "activity".
-- 
-- subject_test is the test dataset with the subject ID. It is 
-- subject_train is the training dataset with the subject ID. It has
+- "feature" is the datasets that contents all the variable names for the data contained in "X_test" and "X_train". It is composed of 561 different variable names.
+- "featureLt" is the datasets produced by the R script "run_analysis" and that contains only the mean or standard deviation variables contained in "X_test" and "X_train". It has 66 variable names.
+- "X_test" is the test dataset and has 2947 rows and 561 variables (described in Variable Description)
+- "X_train" is the training dataset and has 7352 rows and 561 variables (described in Variable Description)
+- "mergeData" is created by the "run_analysis.R" script. It is composed of two datasets: "X_test" and "X_train". It has 10299 rows and 561 variables.
+- "mean_std" is composed of the combined datasets "X_test" and "X_train". It has 10299 rows and only 66 variables (contains only the mean or standard deviation as described in Variable Reduction section). It is produced by the "run_analysis.R" script.
+- "y_test" is the test dataset for the activity codes. It contains only one column and 2947 rows. This column is renamed by the "run_analysis.R" script to "activity".
+- "y_train" is the training dataset for the activity labels. It contains only one column and 7352 rows. This column is renamed by the "run_analysis.R" script to "activity".
+- "mergeDataActivity" is created by the "run_analysis.R" script. It is composed of two datasets: "y_test" and "y_train". It has 10299 rows and 1 variables renamed to "activity". The activity variable is originally a numeric code (with a value from 1 to 6) that the "run_analysis.R" script will transform to a character vector as described in the file "activity_labels".
+- "activity_labels" is a file with the coding values and labels for the "activity" variable contains in "y-test" and "y_train".
+- "subject_test" is the test dataset with the subject ID. It is 
+- "subject_train" is the training dataset with the subject ID. It has
 
 
 ##Variable Descriptions from step 1 - Merges the training and the test sets to create one data set.
