@@ -17,6 +17,7 @@ From the data set in step 4, creates a second, independent tidy data set with th
 1. Create a local directory on your laptop called "Project".
 2. Download the data from the link above to the "Project" folder
 3. Unzip the data
-4. Run the "run_analysis.R" scrip in R or RStudio
+4. Copy the "run_analysis.R" scrip to the "Project" folder
+5. Run the "run_analysis.R" scrip in R or RStudio
 
 
