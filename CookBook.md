@@ -661,7 +661,7 @@ The run_analysis scrip only extracts the mean and standard deviation content in 
 See the paragraph on Dataset Description to understand the transformations performed by the "run_analysis.R" script to convert the numeric activity values to descriptive character values on the following datasets: "y_test", "Y_train" and "mergeDataActivity".
 
 ##Final Transformation Step 5 - Creates an tidy dataset with the average of each variable for each activity and each subject
-Here we aggregate our dataset pr activity and per subjectID. The end result is a flat file ("tidy_data.txt") containing the end result of this assignment
+Here we aggregate our dataset per activity and per subjectID. The end result is a flat file ("tidy_data.txt") containing the end result of this assignment.
 
 
 
