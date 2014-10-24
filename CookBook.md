@@ -15,8 +15,10 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 - "y_train" is the training dataset for the activity labels. It contains only one column and 7352 rows. This column is renamed by the "run_analysis.R" script to "activity".
 - "mergeDataActivity" is created by the "run_analysis.R" script. It is composed of two datasets: "y_test" and "y_train". It has 10299 rows and 1 variables renamed to "activity". The activity variable is originally a numeric code (with a value from 1 to 6) that the "run_analysis.R" script will transform to a character vector as described in the file "activity_labels".
 - "activity_labels" is a file with the coding values and labels for the "activity" variable contains in "y-test" and "y_train".
-- "subject_test" is the test dataset with the subject ID. It is 
-- "subject_train" is the training dataset with the subject ID. It has
+- mean_std_labels is created by the "run_analysis.R" script. it is composed of 10299 rows and 68 mean, standard deviations and activity variables.
+- "subject_test" is the test dataset with the subject ID. It is composed of 2947 rows and 1 variable labeled "subjectID" by the "run_analysis.R" script.
+- "subject_train" is the training dataset with the subject ID. It is composed of 7352 rows and 1 variable labeled "subjectID" by the "run_analysis.R" script.
+- "subject" is obtained after merging the test and training datasets for "subjectID". It is composed of 10299 rows and 1 variable labeled "subjectID".
 
 
 ##Variable Descriptions from step 1 - Merges the training and the test sets to create one data set.
@@ -653,10 +655,10 @@ The run_analysis scrip only extracts the mean and standard deviation content in 
 543  fBodyBodyGyroJerkMag-std()
 
 ##Further Transformation for step 3 and step 4 - Uses descriptive activity names to appropriately labels the dataset with 
-##descriptive variable names. 
+descriptive variable names. 
 See the paragraph on Dataset Description to understand the transformations performed by the "run_analysis.R" script to convert the numeric activity values to descriptive character values on the following datasets: "y_test", "Y_train" and "mergeDataActivity".
 
-##Final Transformation Step 5 - Creates an independent tidy dataset with the average of each variable for each activity and ##each subject
+##Final Transformation Step 5 - Creates an independent tidy dataset with the average of each variable for each activity and each subject
 
 
 
