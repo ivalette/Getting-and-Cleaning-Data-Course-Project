@@ -25,6 +25,8 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 
 ##Variable Descriptions from step 1 - Merges the training and the test sets to create one data set.
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+
 The originals X_test and X_train datasets are composed of the following variables:
 1 tBodyAcc-mean()-X
 2 tBodyAcc-mean()-Y
@@ -589,7 +591,12 @@ The originals X_test and X_train datasets are composed of the following variable
 561 angle(Z,gravityMean)
 
 ##Variable Reduction from step 2 - Extracts only the measurements on the mean and standard deviation for each measurement.
-The run_analysis scrip only extracts the mean and standard deviation content in the original X_test and X_train datasets. The list of variables is then reduces to the following 66 variables and location:
+The run_analysis scrip only extracts the mean and standard deviation content in the original X_test and X_train datasets. The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+The list of variables is then reduces to the following 66 variables and location:
 1           tBodyAcc-mean()-X
 2           tBodyAcc-mean()-Y
 3           tBodyAcc-mean()-Z
