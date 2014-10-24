@@ -21,7 +21,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 - "subject" is obtained after merging the test and training datasets for "subjectID". It is composed of 10299 rows and 1 variable labeled "subjectID".
 - "mean_std_Final" is a dataset obtained after merging the following datasets: "subject", "mean_std_labels". It has 68 variables and 10299 rows.
 
-- 
+- "tidy" is the final dataset with 180 rows and 70 variables. We export this dataset as a flat file called "tidy_data". This file is the end result of this assignment
 
 
 ##Variable Descriptions from step 1 - Merges the training and the test sets to create one data set.
@@ -661,6 +661,7 @@ The run_analysis scrip only extracts the mean and standard deviation content in 
 See the paragraph on Dataset Description to understand the transformations performed by the "run_analysis.R" script to convert the numeric activity values to descriptive character values on the following datasets: "y_test", "Y_train" and "mergeDataActivity".
 
 ##Final Transformation Step 5 - Creates an tidy dataset with the average of each variable for each activity and each subject
+Here we aggregate our dataset pr activity and per subjectID. The end result is a flat file ("tidy_data.txt") containing the end result of this assignment
 
 
 
