@@ -21,6 +21,7 @@ You should create one R script called "run_analysis.R" that does the following.
 2) Download the data from the link above to the "Project" folder
 3) Unzip the data (if you do not have a Mac)
 4) Copy the "run_analysis.R" scrip to the "Project" folder
-5) Run the "run_analysis.R" scrip in R or RStudio
+5) Familiarize yourself with the datasets and the variables by reading the CookBook.md file
+6) Run the "run_analysis.R" scrip in R or RStudio
 
 
