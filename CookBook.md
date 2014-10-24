@@ -652,7 +652,11 @@ The run_analysis scrip only extracts the mean and standard deviation content in 
 542 fBodyBodyGyroJerkMag-mean()
 543  fBodyBodyGyroJerkMag-std()
 
-##
+##Further Transformation for step 3 and step 4 - Uses descriptive activity names to appropriately labels the dataset with 
+##descriptive variable names. 
+See the paragraph on Dataset Description to understand the transformations performed by the "run_analysis.R" script to convert the numeric activity values to descriptive character values on the following datasets: "y_test", "Y_train" and "mergeDataActivity".
+
+##Final Transformation Step 5 - Creates an independent tidy dataset with the average of each variable for each activity and ##each subject
 
 
 
