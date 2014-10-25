@@ -111,5 +111,5 @@ run_analysis <- function(){
         tidy <- aggregate(mean_std_Final[,-2], by = list(activity = mean_std_Final[,2], subject = mean_std_Final[,1]), mean)
         
         # Create an independent dataset with the tidy data 
-        write.csv(tidy, file='tidy_data.txt', row.names=FALSE)
+        write.table(tidy, file='tidy_data.txt', row.names=FALSE)
 }
