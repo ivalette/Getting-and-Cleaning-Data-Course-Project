@@ -24,4 +24,7 @@ You should create one R script called "run_analysis.R" that does the following.
 5) Familiarize yourself with the datasets and the variables by reading the CookBook.md file
 6) Run the "run_analysis.R" script in R or RStudio
 
+##References
+The last part of the exercice is done with help from "The Art of R Programming: A Tour of Statistical Software Design" by Norman Matloff (Kindle Edition), Chapter 6 Factors and Tables, The Aggregate Function. location 2825 of 8657.
+
 
