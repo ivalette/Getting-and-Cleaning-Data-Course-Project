@@ -23,7 +23,7 @@ This section contains a list of both temporary and non-temporary datasets used i
 - "subject" is obtained after merging the test and training datasets for "subjectID". It is composed of 10299 rows and 1 variable labeled "subjectID".
 - "mean_std_Final" is a dataset obtained after merging the following datasets: "subject", "mean_std_labels". It has 68 variables and 10299 rows.
 
-- "tidy" is the final dataset with 180 rows and 69 variables. We export this dataset as a flat file called "tidy_data". This file is the end result of this assignment
+- "tidy" is the final dataset with 180 rows and 68 variables. We export this dataset as a flat file called "tidy_data". This file is the end result of this assignment
 
 
 ##Variable Descriptions from Step 1 - Merges the training and the test sets to create one data set
