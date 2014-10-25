@@ -108,7 +108,7 @@ run_analysis <- function(){
         
         # Calculate the average of each variable for each activity and each subject
         ## See references for help with the aggregate function
-        tidy <- aggregate(mean_std_Final[,-2], by = list(activity = mean_std_Final[,2], subject = mean_std_Final[,1]), mean)
+        tidy <- aggregate(mean_std_Final[,-2], by = list(activity = mean_std_Final[,2], subjectID = mean_std_Final[,1]), mean)
         
         # Create an independent dataset with the tidy data 
         write.table(tidy, file='tidy_data.txt', row.names=FALSE)
