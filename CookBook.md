@@ -24,11 +24,11 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 - "tidy" is the final dataset with 180 rows and 70 variables. We export this dataset as a flat file called "tidy_data". This file is the end result of this assignment
 
 
-##Variable Descriptions from step 1 - Merges the training and the test sets to create one data set.
+##Variable Descriptions from Step 1 - Merges the training and the test sets to create one data set.
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 
-##Variable Reduction from step 2 - Extracts only the measurements on the mean and standard deviation for each measurement.
+##Variable Reduction from Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement.
 The run_analysis scrip only extracts the mean and standard deviation content in the original X_test and X_train datasets. The set of variables that were estimated from these signals are: 
 
 mean(): Mean value
@@ -102,7 +102,7 @@ The list of variables is then reduces to the following 66 variables and location
 542 fBodyBodyGyroJerkMag-mean()
 543  fBodyBodyGyroJerkMag-std()
 
-##Further Transformation for step 3 and step 4 - Uses descriptive activity names to appropriately labels the dataset 
+##Further Transformation for Step 3 and Step 4 - Uses descriptive activity names to appropriately labels the dataset 
 See the paragraph on Dataset Description to understand the transformations performed by the "run_analysis.R" script to convert the numeric activity values to descriptive character values on the following datasets: "y_test", "Y_train" and "mergeDataActivity".
 
 ##Final Transformation Step 5 - Creates an tidy dataset with the average of each variable for each activity and each subject
