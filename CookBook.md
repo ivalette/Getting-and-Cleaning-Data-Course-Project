@@ -31,8 +31,10 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ##Variable Reduction from Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement.
 The run_analysis scrip only extracts the mean and standard deviation content in the original X_test and X_train datasets. The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+#mean(): Mean value
+#std(): Standard deviation
+
+See the README.md file for references.
 
 The list of variables is then reduces to the following 66 variables and location:
 1           tBodyAcc-mean()-X
