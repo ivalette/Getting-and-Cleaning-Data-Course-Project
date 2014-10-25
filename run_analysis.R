@@ -5,13 +5,13 @@
 ## Appropriately labels the data set with descriptive variable names. 
 ## Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-## Create a directory for the "Project" folder (See "README.md" for instructions)
+## Create a directory for the "Project" folder (See "README.md" in GitHub for instructions)
 ## setwd("/Users/isa/Documents/Courses/Johns Hopkins/Getting & Cleaning Data/Project")
 ## getwd()
 
 
 
-# You should create one R script called "run_analysis.R" that does the following:
+# You should create one R script called "run_analysis.R" that does the following.
 run_analysis <- function(){
         
         # Download the file. Note: You need to unzip the file separetly if you do not have a Mac.    
@@ -40,7 +40,7 @@ run_analysis <- function(){
         
         ## 2. Extracts only the measurements on the mean and standard deviation for each measurement.
         ## See references for help with this expression
-        # Extract the colum names from "features" that measure the mean or the std of each measurement.
+        # Extract the colum names from "feature" that measure the mean or the std of each measurement.
         featureLt <- features[grep("std|mean\\(", features[,2]),]
         
         # Create a new dataset from mergeData that only contains the 66 measurements of the mean and the std.
@@ -49,7 +49,7 @@ run_analysis <- function(){
         # Control that the new dataset "mean_std" only contains the mean and std and no other variables!
         # nrow(featureLt)
         # str(mean_std)
-
+        
         
         
         
@@ -62,7 +62,7 @@ run_analysis <- function(){
         mergeDataActivity <- rbind(y_test, y_train)
         # Control that the numbers of rows is correct!
         # str(mergeDataActivity)
-         
+        
         
         
         
@@ -107,9 +107,15 @@ run_analysis <- function(){
         
         
         # Calculate the average of each variable for each activity and each subject
-        ## See references for help with the aggregate function
-        tidy <- aggregate(mean_std_Final[,-2], by = list(activity = mean_std_Final[,2], subjectID = mean_std_Final[,1]), mean)
+        # See references for help with this expression
+        tidy <- aggregate(mean_std_Final[,-2], by=list(activity=mean_std_Final$activity, subjectID=mean_std_Final$subjectID), mean)
+        
+        #Delete the duplicate column subjectID
+        tidy_data <- tidy[,-(2:2)]
+        
+        # Control that the dataset looks correct
+        # str(tidy_data)
         
         # Create an independent dataset with the tidy data 
-        write.table(tidy, file='tidy_data.txt', row.names=FALSE)
+        write.table(tidy_data, file='tidy_data.txt', row.names=FALSE)
 }
