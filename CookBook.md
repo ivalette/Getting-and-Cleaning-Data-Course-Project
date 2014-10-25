@@ -5,6 +5,8 @@ In this document, we will describe the variables, the datasets, transformations 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 ##Dataset Description
+This section conatins a list of both temporary and non-temporary datasets used in this assignment.
+
 - "feature" is the datasets that contents all the variable names for the data contained in "X_test" and "X_train". It is composed of 561 different variable names.
 - "featureLt" is the datasets produced by the R script "run_analysis" and that contains only the mean or standard deviation variables contained in "X_test" and "X_train". It has 66 variable names.
 - "X_test" is the test dataset and has 2947 rows and 561 variables (described in Variable Description)
