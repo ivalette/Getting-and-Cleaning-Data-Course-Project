@@ -25,6 +25,7 @@ You should create one R script called "run_analysis.R" that does the following.
 6) Run the "run_analysis.R" script in R or RStudio
 
 ##References
-The last part of the exercice is done with help from "The Art of R Programming: A Tour of Statistical Software Design" by Norman Matloff (Kindle Edition), Chapter 6 Factors and Tables, The Aggregate Function. location 2825 of 8657.
+The second step of the assignment was done with the help of one of the best R programming book:"The Art of R Programming: A Tour of Statistical Software Design" by Norman Matloff (Kindle Edition). Help with the grep function is provided in Chapter 11 String Manipulation, Regular Expressions, location 5320 of 8657.
+The last part of the exercice is also done with help from "The Art of R Programming: A Tour of Statistical Software Design" by Norman Matloff (Kindle Edition), Chapter 6 Factors and Tables, The Aggregate Function, location 2825 of 8657.
 
 
