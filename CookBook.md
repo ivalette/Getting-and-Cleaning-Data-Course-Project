@@ -33,14 +33,14 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 
 ##Variable Reduction from Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement.
-The run_analysis scrip only extracts the mean and standard deviation content in the original X_test and X_train datasets. The set of variables that were estimated from these signals are: 
+The run_analysis script only extracts the mean and standard deviation contained in the original "X_test" and "X_train" datasets. The set of variables that were estimated from these signals are: 
 
 - mean(): Mean value
 - std(): Standard deviation
 
-See the README.md file for references.
+See the README.md file for references on the grep() expression.
 
-The list of variables is then reduces to the following 66 variables and location:
+The original list of variables is then reduced to the following 66 variables and their location:
 1           tBodyAcc-mean()-X
 2           tBodyAcc-mean()-Y
 3           tBodyAcc-mean()-Z
@@ -112,7 +112,7 @@ The list of variables is then reduces to the following 66 variables and location
 See the paragraph on Dataset Description to understand the transformations performed by the "run_analysis.R" script to convert the numeric activity values to descriptive character values on the following datasets: "y_test", "Y_train" and "mergeDataActivity".
 
 ##Final Transformation Step 5 - Creates an tidy dataset with the average of each variable for each activity and each subject
-Here we aggregate our dataset per activity and per subjectID. The end result is a flat file ("tidy_data.txt") containing the end result of this assignment.See the README.md file for references.
+Here we aggregate our dataset per activity and per subjectID. The end result is a flat file ("tidy_data.txt") containing the end result of this assignment.See the README.md file for references on the aggregate() function.
 
 
 
