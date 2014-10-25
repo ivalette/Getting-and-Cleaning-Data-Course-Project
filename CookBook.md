@@ -21,10 +21,12 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 - "subject" is obtained after merging the test and training datasets for "subjectID". It is composed of 10299 rows and 1 variable labeled "subjectID".
 - "mean_std_Final" is a dataset obtained after merging the following datasets: "subject", "mean_std_labels". It has 68 variables and 10299 rows.
 
-- "tidy" is the final dataset with 180 rows and 70 variables. We export this dataset as a flat file called "tidy_data". This file is the end result of this assignment
+- "tidy" is the final dataset with 180 rows and 69 variables. We export this dataset as a flat file called "tidy_data". This file is the end result of this assignment
 
 
 ##Variable Descriptions from Step 1 - Merges the training and the test sets to create one data set.
+The first step of the "run_analysis.R" script will merge together the test and training datasets "X_test" and "X_train". These files are composed of the following information:
+
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 
